@@ -39,9 +39,10 @@ pipeline{
             }
         }
 
-        stage( "Checking the image history that i can find if any malicious thing happen in it..")
+        stage( "Checking the image history that i can find if any malicious thing happen in it.."){
          steps{
             sh "docker history ${DOCKER_IMAGE}:${DOCKER_TAG}"
+        }
         }
 
         stage("push the docker image on the docker hub")
