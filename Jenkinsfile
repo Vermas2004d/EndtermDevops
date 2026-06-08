@@ -10,7 +10,7 @@ pipeline{
     }
 
     environment{
-        DOCKER_IMAGE = 'vermas12d/et_jenkins'
+        DOCKER_IMAGE = 'vermas2012d/etp_jenkins'
         DOCKER_TAG = "latest"
         CONTAINER_NAME = 'etp_jenkins'
         PORT = 4000
