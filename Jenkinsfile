@@ -20,7 +20,7 @@ pipeline{
         stage("Clone")
         {
             steps{
-                git url : "githubrepo",
+                git url : "https://github.com/Vermas2004d/EndtermDevops.git",
                 branch: "main"
             }
         }
